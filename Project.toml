@@ -1,0 +1,7 @@
+name = "ExamplePlutoCI"
+uuid = "4ff1065f-daf0-4adf-b820-9877f710cebb"
+authors = ["Matt Amos <matthewjamesamos@gmail.com>"]
+version = "0.1.0"
+
+[deps]
+Pluto = "c3e4b0f8-55cb-11ea-2926-15256bba5781"
