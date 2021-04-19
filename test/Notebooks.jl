@@ -4,10 +4,10 @@ import Pluto
 @testset "Existing notebooks " begin
     server = Pluto.ServerSession()
 
-    for path in readdir(joinpath(@__DIR__, "..", "notebook"), join=true)
-        println(normpath(path))
+    project_dir = joinpath(@__DIR__, "..", "notebook")
 
-        path = normpath(path)
+    for path in readdir(project_dir)
+        path = normpath(joinpath(project_dir, path))
 
         nb = @test_nowarn Pluto.load_notebook(path)
 
