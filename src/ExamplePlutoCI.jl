@@ -1,5 +1,3 @@
 module ExamplePlutoCI
-
-greet() = print("Hello World!")
-
-end # module
+    println("ExamplePlutoCI.jl - Some module functionality")
+end
